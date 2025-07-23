@@ -1,0 +1,57 @@
+/* Font and shared section */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.font-tittle {
+  font-family: "Noto Serif", serif;}
+/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    background-color: #ecf6fd;
+}
+*{
+    font-family: "Inter", sans-serif; 
+    max-width:1140px  ;
+    margin: 0 auto;
+     padding: 0;
+    
+}
+
+/* Navbar Section */
+.nav-bar,.nav-title, .brand-links{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-links{
+
+    list-style: none;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.brand-links a {
+text-decoration: none;
+color: #8987A1;
+margin-right:4rem ;
+}
+#home{
+    color: #252432;
+}
+
+
+/* Responsive Area */
+@media screen and (max-width:576px) {
+
+    .nav-title{
+        display: none;
+    }
+    .nav-bar{
+     margin-top:20px;
+    
+    }
+    .logo img{
+        width: 63px;
+        height: 38px;
+        margin-left:  ;
+    }
+}
