@@ -6,13 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
     background-color: #ecf6fd;
-}
-*{
-    font-family: "Inter", sans-serif; 
+      font-family: "Inter", sans-serif; 
     max-width:1140px  ;
     margin: 0 auto;
      padding: 0;
     
+}
+.gray{
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar Section */
@@ -32,10 +33,29 @@ body{
 .brand-links a {
 text-decoration: none;
 color: #8987A1;
-margin-right:4rem ;
+margin-right:3rem ;
 }
 #home{
     color: #252432;
+}
+
+/* Banner Section */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    margin-top: 282px;
+ }
+.bn-title{
+    font-size: 4rem;
+    font-weight: bold;  
+}
+.bn-color{
+    color: #E95A08;
+}
+.banner-description{
+    font-size: 1.45rem;
 }
 
 
@@ -47,11 +67,14 @@ margin-right:4rem ;
     }
     .nav-bar{
      margin-top:20px;
-    
+    margin-left: 16px;
     }
-    .logo img{
-        width: 63px;
-        height: 38px;
-        margin-left:  ;
-    }
+
+        /* responsive banner section */
+        .banner{
+            flex-direction: column-reverse;
+            margin-top: 28px;
+        }
+     
+      
 }
