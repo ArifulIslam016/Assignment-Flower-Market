@@ -7,7 +7,7 @@
 body{
     background-color: #ecf6fd;
       font-family: "Inter", sans-serif; 
-    max-width:1140px  ;
+   
     margin: 0 auto;
 }
 *{
@@ -26,6 +26,8 @@ body{
     display: flex; 
     justify-content: space-between;
     align-items: center;
+     max-width:1140px  ;
+     margin: 0 auto;
 }
 .brand-links{
 
@@ -51,7 +53,10 @@ margin-right:3rem ;
     align-items: center;
     margin:0 auto;
     margin-top: 282px;
- }
+      max-width:1140px  ;
+     margin: 0 auto;
+}
+ 
 .bn-title{
     font-size: 4rem;
     font-weight: bold;  
@@ -81,6 +86,8 @@ margin-right:3rem ;
     margin-bottom: 49px;
 }
 .cards{
+      max-width:1140px  ;
+     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
@@ -114,8 +121,13 @@ margin-right:3rem ;
     display: flex;
     justify-content: space-between;
     align-items: center;
+     max-width:1140px  ;
+    margin: 0 auto;
     margin-top: 210.12px;
+    
+   
 }
+
 .plants-lover{
     margin-left: 60px;
 }
@@ -132,6 +144,53 @@ margin-right:3rem ;
     font-size: 22px;
     margin-bottom: 20PX;
 }
+/* Join Section */
+.join{
+    width: 100%;
+     max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.join{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.join-container{
+    padding-top:199px;
+    padding-bottom: 193px;
+}
+.join-input{
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 23px;
+  padding-bottom: 0px;
+}
+.join-text{
+    padding-top: 15.5px ;
+    padding-left: 20px;
+    padding-bottom: 15.5px;
+    width: 40.25rem;
+    border: none;
+}
+.Join-title{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3.1rem;
+}
+.join-btn{
+  background-color: #E95A08;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+padding:19px 53.5px ;
+}
+
+
+
 /* Responsive Area */
 @media screen and (max-width:576px) {
 
@@ -172,6 +231,28 @@ margin-right:3rem ;
         margin-top: 18px;
         margin-bottom: 143px;
      }
-     
-    
+      join Section 
+      .join-input{   
+        padding: 23px 30px;
+        padding-bottom: 0px;       
+      
+}
+    .join-text{
+        max-width: 13.625rem;
+    }
+    .join-btn{
+        padding: 19px 12px;
+    }
+     .join-input{
+        width: fit-content;
+        margin: 0 auto;
+    } 
+     .join{
+       display: flex;
+       justify-content: center;
+       
+     }
+     .Join-title{
+        font-size:20px ;
+     } 
 }
