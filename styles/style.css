@@ -9,8 +9,13 @@ body{
       font-family: "Inter", sans-serif; 
     max-width:1140px  ;
     margin: 0 auto;
-     padding: 0;
-    
+}
+*{
+    margin: 0;
+    padding: 0;   
+}
+.bn-color{
+    color: #E95A08;
 }
 .gray{
     color: rgba(0, 0, 0, 0.5);
@@ -28,7 +33,7 @@ body{
 }
 .logo img {
     width: 100%;
-    height: 100%;
+   
 }
 .brand-links a {
 text-decoration: none;
@@ -50,15 +55,83 @@ margin-right:3rem ;
 .bn-title{
     font-size: 4rem;
     font-weight: bold;  
+    margin-bottom: 13px;
 }
-.bn-color{
-    color: #E95A08;
+.banner-img{
+    width: 100%;
 }
+
 .banner-description{
     font-size: 1.45rem;
+    margin-top: 0px;
+}
+/* product Card section */
+
+.card-title-container{
+    text-align: center;
+}
+.card-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.card-title-description{
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 49px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.card-img{
+    width: 100%;
+}
+.product-name{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+.product-Price{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.card-btn{
+    background-color: #E95A08;
+    border: none;
+    padding: 19px 80px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.Plants{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 210.12px;
+}
+.plants-lover{
+    margin-left: 60px;
+}
+.join-img img{
+    width: 100%;
 }
 
-
+.plants-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.plants-description{
+    font-size: 22px;
+    margin-bottom: 20PX;
+}
 /* Responsive Area */
 @media screen and (max-width:576px) {
 
@@ -69,12 +142,36 @@ margin-right:3rem ;
      margin-top:20px;
     margin-left: 16px;
     }
+    .banner-title{ margin-left: 16px;}
 
         /* responsive banner section */
         .banner{
             flex-direction: column-reverse;
             margin-top: 28px;
         }
+        /* Responsive Section of Products-card */
+        .cards{
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 14px;
+            margin-right: 17px;
+        }
+        .card-btn{
+            padding: 19px 30.5px;
+        }
+     /* Flower and Plants Lover Section */
+     .Plants{
+        flex-direction: column;
+        margin-top: 41.5px;
+        padding-left: 17px;
+        padding-right: 18px;
+     }
+     .plants-lover{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 17px;
+        margin-top: 18px;
+        margin-bottom: 143px;
+     }
      
-      
+    
 }
