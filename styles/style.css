@@ -135,8 +135,13 @@ margin-right:3rem ;
      max-width:1140px  ;
     margin: 0 auto;
     margin-top: 210.12px;
-    
-   
+    position: relative;
+}
+.badge{
+    position: absolute;
+    width: 21%;
+    top: -35%;
+    left: 14%;
 }
 
 .plants-lover{
@@ -154,6 +159,7 @@ margin-right:3rem ;
 .plants-description{
     font-size: 22px;
     margin-bottom: 20PX;
+    list-style: disc;
 }
 /* Join Section */
 .join{
