@@ -275,7 +275,12 @@ font-size: 1.375rem;
 .img-1{
     width: 100%;
 }
+.c-titles{
+    max-width: 888px;
+    margin: 0 auto;
+}
 .c-title{
+    margin-top: 133.5px;
     font-size: 50px;
     font-weight: bold;
 }
@@ -283,6 +288,7 @@ font-size: 1.375rem;
 .c-description{
     font-size: 22px;
     font-weight: bold;
+    
 }
 .font-tittle{
     font-size: 20px;
