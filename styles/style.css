@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 .font-tittle {
   font-family: "Noto Serif", serif;}
+  .t-font{
+    font-family:"Noto Serif", serif; 
+  }
 /* Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
@@ -22,13 +25,18 @@ body{
 }
 
 /* Navbar Section */
-.nav-bar,.nav-title, .brand-links{
+.nav-bar{
+    max-width:1140px  ;
+    margin: 0 auto;
     display: flex; 
     justify-content: space-between;
     align-items: center;
-     max-width:1140px  ;
-     margin: 0 auto;
+    
 }
+.nav-title{
+    display: flex;
+}
+.brand-links{ display: flex;}
 .brand-links{
 
     list-style: none;
@@ -52,9 +60,9 @@ margin-right:3rem ;
     justify-content: space-between;
     align-items: center;
     margin:0 auto;
-    margin-top: 282px;
+ 
       max-width:1140px  ;
-     margin: 0 auto;
+       margin-top: 282px;
 }
  
 .bn-title{
@@ -74,9 +82,11 @@ margin-right:3rem ;
 
 .card-title-container{
     text-align: center;
+    max-width: 1140px;
+    margin: 120px auto;
 }
 .card-title{
-    font-size: 50px;
+  font-size: 50px;
     font-weight: bold;
     margin-bottom: 16px;
 }
@@ -84,6 +94,7 @@ margin-right:3rem ;
     font-size: 22px;
     margin-top: 0px;
     margin-bottom: 49px;
+   
 }
 .cards{
       max-width:1140px  ;
@@ -154,7 +165,6 @@ margin-right:3rem ;
     background-position: center;
 }
 .join{
-    margin-top: 120px;
     display: flex;
     justify-content: center;
 }
@@ -174,6 +184,7 @@ margin-right:3rem ;
     padding-bottom: 15.5px;
     width: 40.25rem;
     border: none;
+    background:white;
 }
 .Join-title{
     text-align: center;
@@ -215,7 +226,69 @@ font-size: 1.375rem;
 }
 .f-icons img{
     margin-left:24px ;
+    display: inline-block;
 } 
+/* Challege Section */
+.Challenge{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.C-img{
+    display: flex;
+    gap:28px ;
+    justify-content: center;
+    align-items: center;
+    margin:120px auto ;
+}
+.c-img-1{
+    margin-bottom: 25px;
+}
+.img-container{
+    position: relative;
+}
+.over-img-1 {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: white;
+      top:50%;
+      left: 50%;
+    transform: translate(-50%,-50%);    
+}
+.over-img-2 {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: white;
+      top: 50%;
+      left: 50%;
+    transform: translate(-50%,-50%);    
+}
+.over-img-3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.img-1{
+    width: 100%;
+}
+.c-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.c-description{
+    font-size: 22px;
+    font-weight: bold;
+}
+.font-tittle{
+    font-size: 20px;
+    font-weight:bold ;
+    font-family: "Noto Serif", serif;
+}
 
 
 /* Responsive Area */
@@ -225,8 +298,7 @@ font-size: 1.375rem;
         display: none;
     }
     .nav-bar{
-     margin-top:20px;
-    margin-left: 16px;
+     margin: 13px 16px ;
     }
     .banner-title{ margin-left: 16px;}
 
@@ -261,11 +333,12 @@ font-size: 1.375rem;
       join Section 
       .join-input{   
         padding: 23px 30px;
-        padding-bottom: 0px;       
+        padding-bottom: 0px;    
       
 }
     .join-text{
         max-width: 13.625rem;
+       
     }
     .join-btn{
         padding: 19px 12px;
@@ -291,9 +364,23 @@ font-size: 1.375rem;
         margin-top: 20px;
         grid-template-columns: repeat(1, 1fr);
      }
+     .f-icons{
+       
+     }
      .f-icons img {
         margin-left: 0px;
         margin-right: 24px;
         margin-top: 20px;
+        
      }
+     /* Responsive Challenge part */
+     .C-img{
+        flex-direction: column;
+     }
+     .img-2{
+        max-width: 100vw;
+     }
+     .img-2{
+        width: 100vw;
 }
+     }
